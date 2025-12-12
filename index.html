@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoundWave Pro  Wireless Headphones</title>
+  <style>
+    :root {
+      --primary: #5e72e4;
+      --light: #f4f5f7;
+      --dark: #32325d;
+      --radius: 8px;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+    header .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--primary);
+    }
+    nav a {
+      margin-left: 1.5rem;
+      color: var(--dark);
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--primary);
+    }
+    .btn {
+      background: var(--primary);
+      color: #fff;
+      padding: 0.6rem 1.4rem;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    main {
+      margin-top: 4rem;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      text-align: center;
+    }
+    .hero div {
+      flex: 1 1 300px;
+    }
+    .hero h1 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .features {
+      background: var(--light);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #fff;
+      padding: 2rem 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+    .card i {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    input[type="email"] {
+      flex: 1 1 240px;
+      padding: 0.6rem 1rem;
+      border: 2px solid var(--light);
+      border-radius: var(--radius);
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #8898aa;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <div class="logo">SoundWave Pro</div>
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#how-it-works">How It Works</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <h1>Pure sound, zero wires</h1>
+        <p>Experience studio-grade audio with active noise cancellation and 30-hour battery life.</p>
+        <a class="btn" href="#pricing">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+      <h2 style="text-align:center;">Features</h2>
+      <div class="grid">
+        <div class="card">
+          <i>🔋</i>
+          <h3>30-Hour Battery</h3>
+          <p>All-day listening on a single charge; 10-min quick charge gives 5 hrs playback.</p>
+        </div>
+        <div class="card">
+          <i>🎧</i>
+          <h3>Active Noise-Cancelling</h3>
+          <p>Block out distractions with adaptive ANC that adjusts to your environment.</p>
+        </div>
+        <div class="card">
+          <i>📶</i>
+          <h3>Bluetooth 5.3</h3>
+          <p>Stable, low-latency connection up to 15 m for calls, gaming, and movies.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Pricing -->
+    <section id="pricing">
+      <h2 style="text-align:center;">Pricing</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Standard</h3>
+          <p><strong>$99</strong></p>
+          <p>ANC off, 20 hr battery, soft pouch included.</p>
+          <button class="btn">Select</button>
+        </div>
+        <div class="card">
+          <h3>Pro</h3>
+          <p><strong>$149</strong></p>
+          <p>ANC on, 30 hr battery, hard case & cable kit.</p>
+          <button class="btn">Select</button>
+        </div>
+        <div class="card">
+          <h3>Studio</h3>
+          <p><strong>$199</strong></p>
+          <p>Pro + hi-res codec, leather case, 2-year warranty.</p>
+          <button class="btn">Select</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section style="text-align:center;">
+      <h2>Stay in the loop</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+        <input name="email" id="email" type="email" placeholder="Enter your email" required>
+        <input id="submit" type="submit" value="Subscribe" class="btn">
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
